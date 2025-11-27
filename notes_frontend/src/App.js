@@ -210,14 +210,12 @@ export default function App() {
 
   useEffect(() => {
     refreshList();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search, archivedOnly]);
 
   useEffect(() => {
     if (selectedId != null) {
       loadSelected(selectedId);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedId]);
 
   async function handleCreate(payload) {
